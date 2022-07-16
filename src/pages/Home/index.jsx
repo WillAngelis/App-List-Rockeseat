@@ -20,6 +20,7 @@ export function Home() {
     };
 
     setStudents((prevState) => [...prevState, newStudent]);
+    setStudentName('');
   }
 
   useEffect(() => {
@@ -50,6 +51,7 @@ export function Home() {
         type="text"
         placeholder="Digite o nome..."
         onChange={(e) => setStudentName(e.target.value)}
+        value={studentName}
       />
 
       <button type="button" onClick={handleAddStudent}>

@@ -6,6 +6,7 @@ import { Card } from '../../components/Card';
 
 export function Home() {
   const [studentName, setStudentName] = useState('');
+  const [students, setStudents] = useState([]);
 
   return (
     <div className="container">
@@ -19,8 +20,9 @@ export function Home() {
 
       <button type="button">Adicionar</button>
 
-      <Card name="Will" time="10:29:43" />
-      <Card name="Bia" time="15:19:33" />
+      {students.map((student) => (
+        <Card name={student.name} time={student.time} />
+      ))}
     </div>
   );
 }

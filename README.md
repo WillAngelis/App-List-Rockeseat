@@ -46,7 +46,7 @@ Clone o projeto
 Entre no diretório do projeto
 
 ```bash
-  cd applist
+  cd App-List-Rockeseat/
 ```
 
 Instale as dependências
